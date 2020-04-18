@@ -18,7 +18,7 @@
 	<div id="div-padding">
 		<div class="rounded shadow-lg" id="div-size">
 			<div class="p-3 px-5">
-				<form method="post" action="">
+				<form method="post" action="action/login-action.php">
 					<div class="text-center">
 						<h1>Loging</h1>
 					</div>
@@ -40,25 +40,6 @@
 			</div>
 		</div>
 	</div>
-
-	<?php 
-		if(isset($_POST['login-button'])){
-			$username=$_POST['username'];
-			$password=$_POST['password'];
-			$query="select * from admin_info where username='$username' and password='$password'";
-			$result=$conn->query($query);
-			if($result->num_rows>0){
-				$_SESSION['username']=$username;
-				header('location: index.php');
-			}else{
-				$_SESSION['login-error']= 'Username/password is invalid';
-				header('location: login.php');
-			}
-
-		}
-
-	 ?>
-
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>

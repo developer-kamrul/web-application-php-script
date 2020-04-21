@@ -51,10 +51,15 @@
           <a class="dropdown-item" href="all-package.php">All Package</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact-us.php">
-          <i class="fas fa-fw fa-phone-square"></i>
-          <span>Contact</span></a>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fab fa-fw fa-phone-square"></i>
+          <span>Contact</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <a class="dropdown-item" href="contact-us.php">Contact Info</a>
+          <a class="dropdown-item" href="messages.php">Messages</a>
+        </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

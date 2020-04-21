@@ -1,5 +1,6 @@
 
 <?php 
+session_start();
   include './global/db.php';
   //databse connection using class for images
   $a=new Database_Connect();
